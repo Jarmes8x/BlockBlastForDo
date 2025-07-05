@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Blast Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1 class="game-title">Block Blast</h1>
+            <div class="score-display">
+                <div class="score-item">
+                    <span class="score-label">คะแนน</span>
+                    <span class="score-value" id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">คะแนนสูงสุด</span>
+                    <span class="score-value" id="highScore">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-board" id="gameBoard">
+            <div class="combo-display" id="comboDisplay"></div>
+        </div>
+        
+        <div class="pieces-container" id="piecesContainer"></div>
+        
+        <div class="game-controls">
+            <button class="btn" onclick="newGame()">เกมใหม่</button>
+            <button class="btn" onclick="clearBoard()">ล้างตาราง</button>
+        </div>
+    </div>
+    
+    <div class="game-over hidden" id="gameOverScreen">
+        <div class="game-over-content">
+            <h2>จบเกม!</h2>
+            <div class="final-score">คะแนนสุดท้าย: <span id="finalScore">0</span></div>
+            <div class="final-score" id="newHighScoreMsg" style="display: none; color: #ffd700; font-size: 1.2em;">🎉 คะแนนสูงสุดใหม่! 🎉</div>
+            <button class="btn" onclick="newGame()">เล่นใหม่</button>
+        </div>
+    </div>
+
+    <script src="Script.js">
+
+    </script>
+</body>
+</html>
